@@ -1,0 +1,231 @@
+@charset "UTF-8"
+body.corpo{
+	background: url="imagens.index/fundo.jpg" 100%;
+}
+header#cabecalho{
+	border-bottom: solid 2px grey;
+	}
+article#conteudo{
+	margin-left: 15px;
+	margin-right:15px;
+}
+footer#rodape{
+	border-top: solid 2px grey;
+	text-align:center;
+	}
+figure.outrasfotos{
+	/*border:solid 3px rgb(0,0,255);*/
+	background-color:lightgray;
+	text-align:center;
+	box-shadow:0px 0 px 20px #000000;
+	border-radius:80px ;
+	}
+figure.foto1{
+	background-color:lightblue;
+	box-shadow: 6px 6px 6px gray;
+	text-align: center;
+	border-radius: 10px;
+	border: solid 8px black;
+	width:25%;
+	padding-top: 5px;
+	float:right;
+	transition: transform 1s;
+}
+figure.foto1:hover{
+	transform:rotateZ(10deg);
+}
+figure.foto1 img{
+	width: 95%;
+	heigth:150px;
+}
+figure.foto1 h4{
+margin-top: -4px;
+margin-bottom: 0px;
+background-color: yellow;
+}
+
+span.texto{
+	text-align:justify;
+	font-size:16pt;
+	font-family:chilanka;
+	text-indent: 50px;
+	}
+
+
+/*formatação do menu principal*/
+
+nav#menu h3{
+	display: none;
+}
+nav#menu ol{
+	list-style: none;
+	text-transform:uppercase;
+	position:absolute;
+	top:0px;
+	right:60px;
+}
+nav#menu li{
+	display:inline-block;
+	background-color: lightgray;
+	padding:10px;
+	margin:3px;
+	border-radius: 10px;
+	transition: background-color 2s, transform 1s;
+}
+nav#menu li:hover{
+	background-color: darkgray;
+	transform: rotateZ(-15deg);
+}
+nav#menu a{
+	color:black;
+	text-decoration: none;
+}
+nav#menu a:hover{
+	color:white;
+	text-decoration: underline;
+}
+
+/*formatação dos titulos do article*/
+
+article#conteudo h1{
+	background-color:#999999;
+	text-shadow: 2px 2px 2px #FFE645;
+	font-size: 25pt;
+	text-align: center;
+	transition: letter-spacing 1s;
+}
+article#conteudo h1:hover{
+	letter-spacing: 30px;
+}
+
+/*formatação do logo da Darpa*/
+
+header#cabecalho img.logo{
+	position: absolute;
+	top:5px;
+	left:3px;
+}
+hgroup.titulos h1{
+	text-transform: uppercase;
+	/*text-decoration: underline;*/
+	font-size:30pt;
+	letter-spacing:-20px;
+	border-radius:20px;
+	width: 45%;
+	transition: all 2s;
+	}
+hgroup.titulos h1:hover{
+	letter-spacing:6px;
+	background-color:blue;
+	margin-left:9px;
+	color:white;
+	box-shadow:6px, 6px, 6px, gray;
+}
+
+/*formatação dos Ícones*/
+
+header#cabecalho img.icones{
+	position:absolute;
+	top:70px;
+	right:80px;
+}
+
+/*formatação da tabela*/
+
+caption{
+	font-size: 25pt;
+	background-color: darkgray;
+}
+table.tabela1{
+	border-spacing: 0px;
+	text-align: center;
+}
+table.tabela1 th{
+	font-size: 20pt;
+	border: solid 2px black;
+}
+table.tabela1 td{
+	font-size: 20pt;
+	border: solid 2px black;
+	border-spacing: 20px;
+	padding: 20px;	
+}
+table.tabela1 td:hover{
+	background-color: black ;
+	color: white;
+	border-radius: 20px;
+	transition: border-radius 1s;
+}
+span.frase {
+	font-family: sedwick ave display;
+	text-indent: 110px;
+	font-size: 20pt;
+	text-align: justify;
+	margin-bottom: 40px;
+}
+
+/*video 2*/
+
+div.videos2{
+	display: flex;
+}
+
+div.vids[
+	display: flex auto;
+	height:auto;
+]
+
+/*tabela 2*/
+th.estilos{
+	width:100%;
+	border: #076A91;
+	border-radius: 50%;
+}
+
+/*fotos da turma*/
+ul.fotinhas{
+	max-width:100%;
+	margin:auto;
+	padding: 50px;
+	list-style: none;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap:40px;
+
+ul.fotinhas li{
+	width:200px ;
+	height:300px ;
+	border: 5px solid purple;
+	font-family: Arial;
+	text-align: center;
+	background: var(--img)center/cover no-repeat;
+	transition: all 1.5s ease;
+	position: relative;
+}
+
+ul.fotinhas li:hover{
+	background-image: var(--img-hover,var(--img));
+	transform: scale(1.3);
+	border-radius: 40px;
+	z-index:10;
+}
+
+ul.fotinhas li span{
+	opacity:0;
+	color:white;
+	text-shadow:1px 1px 1px black;
+	font-size: 8pt;
+	padding: 10px;
+	border-radius:35px;
+	transition:opacity 1.3s;
+	display:flex;
+	align-items:end;
+	justify-content:center;
+	height:100%;
+	box-sizing:border-box;
+}
+
+ul.fotinhas li:hover span{
+	opacity:1;
+}
